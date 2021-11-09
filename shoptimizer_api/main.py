@@ -26,12 +26,12 @@ from typing import Any, Dict, List, Sequence, Tuple
 
 import flask
 
-import constants
-from models import optimization_result
-from optimizers_utils import optimizer_cache
-import original_types
-from util import app_util
-from util import attribute_miner
+from shoptimizer_api import constants
+from shoptimizer_api import original_types
+from shoptimizer_api.models import optimization_result
+from shoptimizer_api.optimizers_utils import optimizer_cache
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import attribute_miner
 
 _V1_BASE_URL = '/shoptimizer/v1'
 _OPTIMIZERS_BUILTIN_PACKAGE = 'optimizers_builtin'

@@ -15,7 +15,7 @@
 
 """Unit tests for shopping_exclusion_optimizer.py."""
 
-import enums
+from shoptimizer_api import enums
 import unittest.mock as mock
 
 from absl.testing import parameterized

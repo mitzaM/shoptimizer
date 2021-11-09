@@ -24,7 +24,7 @@ import logging
 from typing import Any, Dict, List, Optional, OrderedDict, Set, Tuple
 from flask import current_app
 
-import original_types
+from shoptimizer_api import original_types
 from util import color_miner
 from util import gpc_id_to_string_converter
 from util import size_miner

@@ -19,7 +19,7 @@ import unittest.mock as mock
 
 from absl.testing import parameterized
 
-import constants
+from shoptimizer_api import constants
 from optimizers_builtin import condition_optimizer
 from test_data import requests_bodies
 from util import app_util

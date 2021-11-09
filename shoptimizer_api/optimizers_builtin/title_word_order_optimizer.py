@@ -37,7 +37,7 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 from util import promo_text_remover as promo_text_remover_lib
 from flask import current_app
 
-import constants
+from shoptimizer_api import constants
 
 from models import optimization_result_counts
 from optimizers_abstract import base_optimizer

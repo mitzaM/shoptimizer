@@ -30,7 +30,7 @@ contain values or could be mined from the product:
 import logging
 from typing import Any, Dict
 
-import constants
+from shoptimizer_api import constants
 
 from models import optimization_result_counts
 from optimizers_abstract import base_optimizer

@@ -20,11 +20,11 @@ import logging
 import os
 from typing import Any, Dict
 
-import constants
-import enums
+from shoptimizer_api import constants
+from shoptimizer_api import enums
 from models import optimization_result
 from models import optimization_result_counts
-import original_types
+from shoptimizer_api import original_types
 
 # final was moved from typing_extensions to typing in Python 3.8 per:
 # https://mypy.readthedocs.io/en/stable/final_attrs.html

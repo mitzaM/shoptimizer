@@ -15,7 +15,7 @@
 
 """Tests for url_util."""
 from absl.testing import parameterized
-import constants
+from shoptimizer_api import constants
 from util import url_util
 
 _VALID_ASCII_URLS = [

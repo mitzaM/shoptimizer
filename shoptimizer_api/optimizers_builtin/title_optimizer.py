@@ -37,7 +37,7 @@ import logging
 import re
 from typing import Any, Dict, List
 
-import constants
+from shoptimizer_api import constants
 
 from models import optimization_result_counts
 from optimizers_abstract import base_optimizer

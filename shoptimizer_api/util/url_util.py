@@ -20,7 +20,7 @@ import os
 from typing import AnyStr, Optional
 import urllib.parse
 
-import constants
+from shoptimizer_api import constants
 
 
 def is_valid_link_url(url: AnyStr, max_length: Optional[int] = None) -> bool:

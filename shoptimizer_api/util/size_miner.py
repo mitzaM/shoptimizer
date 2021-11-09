@@ -33,7 +33,7 @@ from flask import current_app
 import jaconv
 import MeCab
 
-import constants
+from shoptimizer_api import constants
 from util import gpc_id_to_string_converter
 from util import optimization_util
 

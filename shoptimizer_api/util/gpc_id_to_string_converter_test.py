@@ -17,7 +17,7 @@
 
 import unittest
 
-import constants
+from shoptimizer_api import constants
 from util import app_util
 from util import gpc_id_to_string_converter
 

@@ -21,7 +21,7 @@ from unittest import mock
 import urllib.error
 
 from absl.testing import absltest
-import constants
+from shoptimizer_api import constants
 import flask
 from optimizers_builtin import image_link_optimizer
 from test_data import requests_bodies

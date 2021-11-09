@@ -30,7 +30,7 @@ import sys
 from typing import Any, Iterable, List, Mapping, Tuple
 import urllib.error
 
-import constants
+from shoptimizer_api import constants
 import flask
 from models import image_download
 from models import optimization_result_counts

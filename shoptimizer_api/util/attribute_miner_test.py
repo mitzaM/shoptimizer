@@ -18,7 +18,7 @@
 import unittest
 import unittest.mock as mock
 
-import constants
+from shoptimizer_api import constants
 from test_data import requests_bodies
 from util import app_util
 from util import attribute_miner

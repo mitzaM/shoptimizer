@@ -23,7 +23,7 @@ from test_data import requests_bodies
 from typing import List, Dict
 from util import app_util
 
-import constants
+from shoptimizer_api import constants
 
 # GPC ID IS 201
 _PROPER_GPC_CATEGORY_EN = 'Apparel & Accessories > Jewelry > Watches'

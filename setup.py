@@ -3,8 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='shoptimizer_api',
     version='1.0',
-    package_dir={'': 'shoptimizer_api'},
-    packages=find_packages(where='shoptimizer_api'),
+    packages=['shoptimizer_api', 'shoptimizer_api.*'],
     zip_safe=False,
     install_requires=[
         'flask==1.1.1',

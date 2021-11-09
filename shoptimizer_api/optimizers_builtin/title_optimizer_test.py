@@ -19,8 +19,8 @@ import unittest.mock as mock
 
 from absl.testing import parameterized
 
-import constants
-import enums
+from shoptimizer_api import constants
+from shoptimizer_api import enums
 from optimizers_builtin import title_optimizer
 from test_data import requests_bodies
 from util import app_util

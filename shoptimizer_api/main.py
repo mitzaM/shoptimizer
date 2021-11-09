@@ -26,8 +26,8 @@ from typing import Any, Dict, List, Sequence, Tuple
 
 import flask
 
-import constants
-import original_types
+from shoptimizer_api import constants
+from shoptimizer_api import original_types
 from models import optimization_result
 from optimizers_utils import optimizer_cache
 from util import app_util

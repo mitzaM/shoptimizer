@@ -19,7 +19,7 @@ import json
 
 from absl.testing import parameterized
 
-import main
+from shoptimizer_api import main
 from test_data import requests_bodies
 
 

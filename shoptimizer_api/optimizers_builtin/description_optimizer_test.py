@@ -17,7 +17,7 @@
 
 from absl.testing import parameterized
 
-import constants
+from shoptimizer_api import constants
 from optimizers_builtin import description_optimizer
 from test_data import requests_bodies
 from util import attribute_miner

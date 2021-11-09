@@ -20,7 +20,7 @@ import pkgutil
 import sys
 from typing import List, Type
 
-from optimizers_abstract import base_optimizer
+from shoptimizer_api.optimizers_abstract import base_optimizer
 
 
 class OptimizerCache(object):

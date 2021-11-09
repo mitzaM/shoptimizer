@@ -32,13 +32,13 @@ import urllib.error
 
 from shoptimizer_api import constants
 import flask
-from models import image_download
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import image_util
-from util import networking
-from util import optimization_util
-from util import url_util
+from shoptimizer_api.models import image_download
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import image_util
+from shoptimizer_api.util import networking
+from shoptimizer_api.util import optimization_util
+from shoptimizer_api.util import url_util
 
 _CONFIG_FILE_NAME: str = 'image_link_optimizer_config'
 _THREAD_NAME_PREFIX: str = 'shoptimizer-image-optimizer'

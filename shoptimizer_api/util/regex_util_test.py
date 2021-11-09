@@ -16,7 +16,7 @@
 """Tests for regex_util."""
 
 from absl.testing import parameterized
-from util import regex_util
+from shoptimizer_api.util import regex_util
 
 
 class RegexUtilTest(parameterized.TestCase):

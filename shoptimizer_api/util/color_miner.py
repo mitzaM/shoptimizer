@@ -32,8 +32,8 @@ from flask import current_app
 import MeCab
 
 from shoptimizer_api import constants
-from util import gpc_id_to_string_converter
-from util import optimization_util
+from shoptimizer_api.util import gpc_id_to_string_converter
+from shoptimizer_api.util import optimization_util
 
 _COLOR_OPTIMIZER_CONFIG_FILE_NAME: str = 'color_optimizer_config_{}'
 _COLOR_TERMS_CONFIG_KEY: str = 'color_terms'

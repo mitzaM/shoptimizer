@@ -39,10 +39,10 @@ from typing import Any, Dict, List
 
 from shoptimizer_api import constants
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import optimization_util
-from util import size_miner
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import optimization_util
+from shoptimizer_api.util import size_miner
 
 _CHARS_TO_USE_WHEN_CREATING_TITLE: int = 34
 _MAX_TITLE_LENGTH: int = 150

@@ -18,10 +18,10 @@
 from absl.testing import parameterized
 
 from shoptimizer_api import constants
-from optimizers_builtin import description_optimizer
-from test_data import requests_bodies
-from util import attribute_miner
-from util import app_util
+from shoptimizer_api.optimizers_builtin import description_optimizer
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import attribute_miner
+from shoptimizer_api.util import app_util
 
 
 class DescriptionOptimizerTest(parameterized.TestCase):

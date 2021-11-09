@@ -20,7 +20,7 @@ import urllib.error
 import urllib.request
 
 from absl.testing import parameterized
-from util import networking
+from shoptimizer_api.util import networking
 
 
 class NetworkingTest(parameterized.TestCase):

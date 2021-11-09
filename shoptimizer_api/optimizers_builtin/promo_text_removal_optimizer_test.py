@@ -20,9 +20,9 @@ import unittest.mock as mock
 
 from shoptimizer_api import constants
 from shoptimizer_api import enums
-from optimizers_builtin import promo_text_removal_optimizer
-from test_data import requests_bodies
-from util import app_util
+from shoptimizer_api.optimizers_builtin import promo_text_removal_optimizer
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import app_util
 
 
 @mock.patch('util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',

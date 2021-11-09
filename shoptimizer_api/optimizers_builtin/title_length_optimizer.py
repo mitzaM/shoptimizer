@@ -27,9 +27,9 @@ import logging
 import re
 from typing import Any, Dict
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import optimization_util
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import optimization_util
 
 _MAX_TITLE_LENGTH: int = 150
 

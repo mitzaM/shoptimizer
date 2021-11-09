@@ -19,8 +19,8 @@ import copy
 
 from absl.testing import parameterized
 
-from test_data import requests_bodies
-from util import optimization_util
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import optimization_util
 
 MAX_LIST_LENGTH = 3
 MAX_TOTAL_STR_LENGTH = 10

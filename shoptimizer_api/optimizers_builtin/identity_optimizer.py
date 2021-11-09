@@ -16,8 +16,8 @@
 """An optimizer that returns the product data without modifying it."""
 from typing import Any, Dict
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
 
 
 class IdentityOptimizer(base_optimizer.BaseOptimizer):

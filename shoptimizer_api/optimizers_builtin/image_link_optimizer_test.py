@@ -23,11 +23,11 @@ import urllib.error
 from absl.testing import absltest
 from shoptimizer_api import constants
 import flask
-from optimizers_builtin import image_link_optimizer
-from test_data import requests_bodies
-from util import app_util
-from util import image_util
-from util import networking
+from shoptimizer_api.optimizers_builtin import image_link_optimizer
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import image_util
+from shoptimizer_api.util import networking
 
 
 def _build_list_of_image_links(num_links: int,

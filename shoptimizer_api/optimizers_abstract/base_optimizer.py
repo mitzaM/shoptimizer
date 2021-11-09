@@ -22,8 +22,8 @@ from typing import Any, Dict
 
 from shoptimizer_api import constants
 from shoptimizer_api import enums
-from models import optimization_result
-from models import optimization_result_counts
+from shoptimizer_api.models import optimization_result
+from shoptimizer_api.models import optimization_result_counts
 from shoptimizer_api import original_types
 
 # final was moved from typing_extensions to typing in Python 3.8 per:

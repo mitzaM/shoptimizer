@@ -18,8 +18,8 @@ import unittest.mock as mock
 
 from absl.testing import parameterized
 
-from optimizers_abstract import base_optimizer
-from optimizers_utils import optimizer_cache
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.optimizers_utils import optimizer_cache
 
 
 class OptimizerCacheTest(parameterized.TestCase):

@@ -18,10 +18,10 @@
 from absl.testing import parameterized
 import unittest.mock as mock
 
-from optimizers_builtin import title_word_order_optimizer
-from test_data import requests_bodies
+from shoptimizer_api.optimizers_builtin import title_word_order_optimizer
+from shoptimizer_api.test_data import requests_bodies
 from typing import List, Dict
-from util import app_util
+from shoptimizer_api.util import app_util
 
 from shoptimizer_api import constants
 

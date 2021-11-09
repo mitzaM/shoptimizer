@@ -643,7 +643,7 @@ __Sample Plugin__
 ```python
 from typing import Any, Dict
 
-from optimizers_abstract import base_optimizer
+from shoptimizer_api.optimizers_abstract import base_optimizer
 
 
 class MyPlugin(base_optimizer.BaseOptimizer):

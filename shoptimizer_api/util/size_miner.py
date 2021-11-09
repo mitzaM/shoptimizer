@@ -34,8 +34,8 @@ import jaconv
 import MeCab
 
 from shoptimizer_api import constants
-from util import gpc_id_to_string_converter
-from util import optimization_util
+from shoptimizer_api.util import gpc_id_to_string_converter
+from shoptimizer_api.util import optimization_util
 
 _ATTRIBUTES_TO_INSPECT = ('title', 'description')
 

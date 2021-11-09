@@ -19,8 +19,8 @@ from absl.testing import parameterized
 import unittest.mock as mock
 
 from shoptimizer_api import constants
-from util import app_util
-from util import size_miner
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import size_miner
 
 
 @mock.patch(

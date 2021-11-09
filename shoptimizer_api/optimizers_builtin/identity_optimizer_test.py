@@ -16,8 +16,8 @@
 """Unit tests for identity_optimizer.py."""
 from absl.testing import parameterized
 
-from optimizers_builtin import identity_optimizer
-from test_data import requests_bodies
+from shoptimizer_api.optimizers_builtin import identity_optimizer
+from shoptimizer_api.test_data import requests_bodies
 
 
 class IdentityOptimizerTest(parameterized.TestCase):

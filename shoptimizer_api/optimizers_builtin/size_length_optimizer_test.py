@@ -19,8 +19,8 @@ import unittest.mock as mock
 from absl.testing import parameterized
 
 from shoptimizer_api import enums
-from optimizers_builtin import size_length_optimizer
-from test_data import requests_bodies
+from shoptimizer_api.optimizers_builtin import size_length_optimizer
+from shoptimizer_api.test_data import requests_bodies
 
 
 class SizeLengthOptimizerTest(parameterized.TestCase):

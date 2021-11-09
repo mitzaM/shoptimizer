@@ -25,10 +25,10 @@ import logging
 from typing import AbstractSet, Any, Mapping, Optional, Sequence
 from flask import current_app
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import gpc_id_to_string_converter
-from util import optimization_util
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import gpc_id_to_string_converter
+from shoptimizer_api.util import optimization_util
 
 _GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME: str = 'gpc_string_to_id_mapping_{}'
 

@@ -20,8 +20,8 @@ import unittest.mock as mock
 from absl.testing import parameterized
 
 from shoptimizer_api import constants
-from util import app_util
-from util import promo_text_remover
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import promo_text_remover
 
 
 def _build_dummy_product(title: str = '') -> Dict[str, Any]:

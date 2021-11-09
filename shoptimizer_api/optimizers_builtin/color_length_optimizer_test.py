@@ -17,8 +17,8 @@
 
 from absl.testing import parameterized
 
-from optimizers_builtin import color_length_optimizer
-from test_data import requests_bodies
+from shoptimizer_api.optimizers_builtin import color_length_optimizer
+from shoptimizer_api.test_data import requests_bodies
 
 
 class ColorLengthOptimizerTest(parameterized.TestCase):

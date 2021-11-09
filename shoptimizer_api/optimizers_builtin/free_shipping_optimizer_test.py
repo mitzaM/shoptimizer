@@ -18,9 +18,9 @@
 from absl.testing import parameterized
 
 from shoptimizer_api import constants
-from optimizers_builtin import free_shipping_optimizer
-from test_data import requests_bodies
-from util import app_util
+from shoptimizer_api.optimizers_builtin import free_shipping_optimizer
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import app_util
 
 
 class FreeShippingOptimizerTest(parameterized.TestCase):

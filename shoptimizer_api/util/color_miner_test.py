@@ -21,8 +21,8 @@ import unittest.mock as mock
 from absl.testing import parameterized
 
 from shoptimizer_api import constants
-from util import app_util
-from util import color_miner
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import color_miner
 
 
 def _build_dummy_product(

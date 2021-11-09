@@ -18,8 +18,8 @@
 import unittest
 
 from shoptimizer_api import constants
-from util import app_util
-from util import gpc_id_to_string_converter
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import gpc_id_to_string_converter
 
 _GPC_STRING_TO_ID_MAPPING_CONFIG_TEST_FILE_NAME = 'gpc_string_to_id_mapping_{}_test'
 

@@ -30,9 +30,9 @@ use area and removes them.
 import logging
 from typing import Any, Dict, List
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import optimization_util
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import optimization_util
 
 _FIELDS_TO_SANITIZE = ['description', 'title']
 # Can be changed to a space etc. if you want to replace invalid chars instead of

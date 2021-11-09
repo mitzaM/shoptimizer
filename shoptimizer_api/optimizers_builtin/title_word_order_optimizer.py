@@ -34,16 +34,16 @@ import enum
 import logging
 import re
 from typing import Any, Callable, Dict, List, Optional, Tuple
-from util import promo_text_remover as promo_text_remover_lib
+from shoptimizer_api.util import promo_text_remover as promo_text_remover_lib
 from flask import current_app
 
 from shoptimizer_api import constants
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import gpc_id_to_string_converter
-from util import optimization_util
-from util import regex_util
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import gpc_id_to_string_converter
+from shoptimizer_api.util import optimization_util
+from shoptimizer_api.util import regex_util
 
 _MAX_KEYWORDS_PER_TITLE = 3
 _MAX_TITLE_LENGTH = 150

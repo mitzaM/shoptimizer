@@ -24,9 +24,9 @@ from typing import Any, Dict, Optional, Set
 
 import flask
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import optimization_util
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import optimization_util
 
 _EXCLUDED_DESTINATIONS_KEY = 'excludedDestinations'
 _INCLUDED_DESTINATIONS_KEY = 'includedDestinations'

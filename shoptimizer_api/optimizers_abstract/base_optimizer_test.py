@@ -20,9 +20,9 @@ import unittest.mock as mock
 
 from absl.testing import parameterized
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from test_data import requests_bodies
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.test_data import requests_bodies
 
 
 class DummyOptimizer(base_optimizer.BaseOptimizer):

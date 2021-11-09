@@ -18,7 +18,7 @@ import os
 import pathlib
 
 from absl.testing import absltest
-from util import image_util
+from shoptimizer_api.util import image_util
 
 
 _PATH_TO_TEST_IMAGES = os.path.join(

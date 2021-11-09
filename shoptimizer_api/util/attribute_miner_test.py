@@ -19,9 +19,9 @@ import unittest
 import unittest.mock as mock
 
 from shoptimizer_api import constants
-from test_data import requests_bodies
-from util import app_util
-from util import attribute_miner
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import app_util
+from shoptimizer_api.util import attribute_miner
 
 
 @mock.patch('util.attribute_miner._GENDER_OPTIMIZER_CONFIG_FILE_NAME',

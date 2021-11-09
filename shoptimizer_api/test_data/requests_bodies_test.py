@@ -19,7 +19,7 @@ import json
 
 from absl.testing import parameterized
 
-from test_data import requests_bodies
+from shoptimizer_api.test_data import requests_bodies
 
 
 class RequestsBodiesTests(parameterized.TestCase):

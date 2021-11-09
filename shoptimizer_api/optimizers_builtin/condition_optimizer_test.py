@@ -20,9 +20,9 @@ import unittest.mock as mock
 from absl.testing import parameterized
 
 from shoptimizer_api import constants
-from optimizers_builtin import condition_optimizer
-from test_data import requests_bodies
-from util import app_util
+from shoptimizer_api.optimizers_builtin import condition_optimizer
+from shoptimizer_api.test_data import requests_bodies
+from shoptimizer_api.util import app_util
 
 
 @mock.patch.dict('os.environ', {'LANGUAGE': 'TEST'})

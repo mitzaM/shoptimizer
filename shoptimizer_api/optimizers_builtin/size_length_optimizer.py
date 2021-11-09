@@ -25,9 +25,9 @@ ensure the sizes attribute only contains one value.
 import logging
 from typing import Any, Dict
 
-from models import optimization_result_counts
-from optimizers_abstract import base_optimizer
-from util import optimization_util
+from shoptimizer_api.models import optimization_result_counts
+from shoptimizer_api.optimizers_abstract import base_optimizer
+from shoptimizer_api.util import optimization_util
 
 _MAX_SIZE_LENGTH: int = 100
 

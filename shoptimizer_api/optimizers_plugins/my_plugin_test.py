@@ -16,8 +16,8 @@
 """Unit tests for my_plugin.py."""
 from absl.testing import parameterized
 
-from optimizers_plugins import my_plugin
-from test_data import requests_bodies
+from shoptimizer_api.optimizers_plugins import my_plugin
+from shoptimizer_api.test_data import requests_bodies
 
 
 class MyPluginTest(parameterized.TestCase):

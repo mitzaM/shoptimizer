@@ -25,9 +25,9 @@ from typing import Any, Dict, List, Optional, OrderedDict, Set, Tuple
 from flask import current_app
 
 from shoptimizer_api import original_types
-from util import color_miner
-from util import gpc_id_to_string_converter
-from util import size_miner
+from shoptimizer_api.util import color_miner
+from shoptimizer_api.util import gpc_id_to_string_converter
+from shoptimizer_api.util import size_miner
 
 _GENDER_OPTIMIZER_CONFIG_FILE_NAME: str = 'gender_optimizer_config_{}'
 _GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME: str = 'gpc_string_to_id_mapping_{}'

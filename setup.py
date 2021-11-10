@@ -5,6 +5,7 @@ setup(
     version='1.0',
     packages=find_packages(),
     zip_safe=False,
+    include_package_data=True,
     install_requires=[
         'flask==1.1.1',
         'requests>=2.22.0',

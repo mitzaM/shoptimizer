@@ -34,19 +34,19 @@ _PROPER_GPC_CATEGORY_JA = ('ファッション・アクセサリー > ' 'ジュ�
 _GPC_CATEGORY_LEVEL_4_JA = ('ファッション・アクセサリー > ' '衣料品 > アウター > ' 'コート・ジャケット')
 
 
-@mock.patch('util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',
+@mock.patch('shoptimizer_api.util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',
             'promo_text_removal_optimizer_config_{}_test')
 @mock.patch(
-    'optimizers_builtin.title_word_order_optimizer._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
+    'shoptimizer_api.optimizers_builtin.title_word_order_optimizer._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
     'gpc_string_to_id_mapping_{}_test')
 @mock.patch(
-    'optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_CONFIG_FILE_NAME',
+    'shoptimizer_api.optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_CONFIG_FILE_NAME',
     'title_word_order_config_{}_test')
 @mock.patch(
-    'optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_BLOCKLIST_FILE_NAME',
+    'shoptimizer_api.optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_BLOCKLIST_FILE_NAME',
     'title_word_order_blocklist_{}_test')
 @mock.patch(
-    'optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_OPTIONS_FILE_NAME',
+    'shoptimizer_api.optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_OPTIONS_FILE_NAME',
     'title_word_order_options_test')
 class TitleWordOrderOptimizerTest(parameterized.TestCase):
 
@@ -280,7 +280,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(expected_title, product['title'])
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_description',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_description',
       return_value=True)
   def test_wmm_keyword_in_description_is_copied_to_title_when_options_toggle_is_on(
       self, _):
@@ -300,7 +300,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(expected_title, product['title'])
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_description',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_description',
       return_value=False)
   def test_wmm_keyword_in_description_is_not_copied_when_options_toggle_is_off(
       self, _):
@@ -338,7 +338,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
                         'モデル：エオファース、色：レッド'
   }])
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_product_types',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_product_types',
       return_value=True)
   def test_wmm_keyword_in_product_types_is_copied_to_title_when_options_toggle_is_on(
       self, _, original_title, product_types, expected_title):
@@ -355,7 +355,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(expected_title, product['title'])
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_product_types',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._optimization_includes_product_types',
       return_value=False)
   def test_wmm_keyword_in_product_types_is_not_copied_to_title_when_options_toggle_is_off(
       self, _):
@@ -445,7 +445,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(1, optimization_result.num_of_products_optimized)
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_optimization_level',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_optimization_level',
       return_value=title_word_order_optimizer._OptimizationLevel.AGGRESSIVE)
   def test_keywords_in_gpc_level_3_is_copied_to_front_when_gpc_level_is_deeper_than_3_and_optimization_level_is_aggressive(
       self, _):
@@ -465,7 +465,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(1, optimization_result.num_of_products_optimized)
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_optimization_level',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_optimization_level',
       return_value=title_word_order_optimizer._OptimizationLevel.STANDARD)
   def test_optimization_is_skipped_when_gpc_level_is_deeper_than_3_and_optimization_level_is_standard(
       self, _):
@@ -534,7 +534,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(1, optimization_result.num_of_products_optimized)
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
       return_value=title_word_order_optimizer._KeywordsPosition.BACK)
   def test_keywords_are_appended_in_descending_order_of_weight_when_keywords_position_is_back(
       self, _):
@@ -556,7 +556,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(1, optimization_result.num_of_products_optimized)
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
       return_value=title_word_order_optimizer._KeywordsPosition.BACK)
   def test_at_most_three_keywords_are_appended_weight_when_keywords_position_is_back(
       self, _):
@@ -579,7 +579,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(1, optimization_result.num_of_products_optimized)
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
       return_value=title_word_order_optimizer._KeywordsPosition.BACK)
   def test_title_is_not_optimized_if_title_more_than_max_title_length_when_keywords_position_is_back(
       self, _):
@@ -599,7 +599,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
     self.assertEqual(0, optimization_result.num_of_products_optimized)
 
   @mock.patch(
-      'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
+      'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer._get_keywords_position',
       return_value=title_word_order_optimizer._KeywordsPosition.BACK)
   def test_a_number_of_keywords_are_appended_so_that_title_length_does_not_exceed_max_length_when_keywords_position_is_back(
       self, _):
@@ -631,7 +631,7 @@ class TitleWordOrderOptimizerTest(parameterized.TestCase):
   def test_process_does_not_modify_title_when_title_contains_space_and_no_keywords_found(
       self, keywords_position):
     get_keywords_position_path = (
-        'optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer.'
+        'shoptimizer_api.optimizers_builtin.title_word_order_optimizer.TitleWordOrderOptimizer.'
         '_get_keywords_position')
 
     with mock.patch(get_keywords_position_path) as mock_keywords_position:
@@ -701,7 +701,7 @@ def _set_test_variables(module: 'Module'):
 
 
 @mock.patch(
-    'optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_OPTIONS_FILE_NAME',
+    'shoptimizer_api.optimizers_builtin.title_word_order_optimizer._TITLE_WORD_ORDER_OPTIONS_FILE_NAME',
     'title_word_order_options_test')
 class TitleWordOrderOptimizerNoFlaskTest(parameterized.TestCase):
   """Tests TitleWordOrderOptimizer running outside a Flask context."""

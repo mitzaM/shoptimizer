@@ -58,10 +58,10 @@ def _build_dummy_product(
   return product
 
 
-@mock.patch('util.color_miner._COLOR_OPTIMIZER_CONFIG_FILE_NAME',
+@mock.patch('shoptimizer_api.util.color_miner._COLOR_OPTIMIZER_CONFIG_FILE_NAME',
             'color_optimizer_config_{}_test')
 @mock.patch(
-    'util.color_miner._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
+    'shoptimizer_api.util.color_miner._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
     'gpc_string_to_id_mapping_{}_test')
 class ColorMinerTest(parameterized.TestCase):
 

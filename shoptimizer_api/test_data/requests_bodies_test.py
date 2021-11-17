@@ -30,13 +30,13 @@ class RequestsBodiesTests(parameterized.TestCase):
           'testcase_name': 'no_transformations',
           'properties_to_be_updated': None,
           'properties_to_be_removed': None,
-          'expected_json_file': 'test_product_identity.json',
+          'expected_json_file': 'shoptimizer_api/test_data/test_product_identity.json',
       },
       {
           'testcase_name': 'deletes',
           'properties_to_be_updated': None,
           'properties_to_be_removed': {'gtin', 'mpn'},
-          'expected_json_file': 'test_product_deletes.json',
+          'expected_json_file': 'shoptimizer_api/test_data/test_product_deletes.json',
       },
       {
           'testcase_name': 'updates',
@@ -44,7 +44,7 @@ class RequestsBodiesTests(parameterized.TestCase):
               'mpn': '12345'
           },
           'properties_to_be_removed': None,
-          'expected_json_file': 'test_product_updates.json',
+          'expected_json_file': 'shoptimizer_api/test_data/test_product_updates.json',
       },
       {
           'testcase_name': 'updates_deletes',
@@ -52,7 +52,7 @@ class RequestsBodiesTests(parameterized.TestCase):
               'gtin': '1'
           },
           'properties_to_be_removed': {'mpn'},
-          'expected_json_file': 'test_product_updates_deletes.json',
+          'expected_json_file': 'shoptimizer_api/test_data/test_product_updates_deletes.json',
       },
   ])
   def test_build_request_body(self, properties_to_be_updated,

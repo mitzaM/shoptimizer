@@ -8,8 +8,8 @@
                 "kind": "content#product",
                 "offerId": "1111111111",
                 "source": "api",
-                "title": "Google Tee Black",
-                "description": "The Black Google Tee is available in ...",
+                "title": "Google Tee",
+                "description": "The Google Tee is available in ...",
                 "link": "http://my.site.com/blacktee/",
                 "imageLink": "https://shop.example.com/.../images/foo.jpg",
                 "contentLanguage": "en",
@@ -37,11 +37,8 @@
                 "sizes": [
                     "Large"
                 ],
-                "destinations": [
-                    {
-                        "destinationName": "Shopping",
-                        "intention": "required"
-                    }
+                "includedDestinations": [
+                    "Shopping ads"
                 ]
             }
         }

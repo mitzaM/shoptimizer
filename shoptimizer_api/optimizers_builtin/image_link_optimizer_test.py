@@ -83,7 +83,7 @@ class ImageLinkOptimizerTest(absltest.TestCase):
           optimizer.require_image_score_quality_better_than)
 
   def test_config_uses_config_file_if_no_assignment(self):
-    with open(f'config/{image_link_optimizer._CONFIG_FILE_NAME}.json') as f:
+    with open(f'shoptimizer_api/config/{image_link_optimizer._CONFIG_FILE_NAME}.json') as f:
       file_config = json.load(f)
       optimizer = image_link_optimizer.ImageLinkOptimizer()
 

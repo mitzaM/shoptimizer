@@ -637,8 +637,8 @@ class TitleOptimizerBrandTest(parameterized.TestCase):
     with mock.patch(
         'builtins.open',
         mock.mock_open(read_data='')), mock.patch('json.load'), mock.patch(
-            'util.color_miner.ColorMiner') as mocked_color_miner, mock.patch(
-                'util.size_miner.SizeMiner') as mocked_size_miner:
+            'shoptimizer_api.util.color_miner.ColorMiner') as mocked_color_miner, mock.patch(
+                'shoptimizer_api.util.size_miner.SizeMiner') as mocked_size_miner:
       mocked_color_miner.return_value.mine_color.return_value = None, None
       mocked_size_miner.return_value.mine_size.return_value = None
       mocked_size_miner.return_value.is_size_in_attribute = False
@@ -650,7 +650,7 @@ class TitleOptimizerBrandTest(parameterized.TestCase):
       self.assertEqual(1, optimization_result.num_of_products_optimized)
 
 
-@mock.patch('util.color_miner._COLOR_OPTIMIZER_CONFIG_FILE_NAME',
+@mock.patch('shoptimizer_api.util.color_miner._COLOR_OPTIMIZER_CONFIG_FILE_NAME',
             'color_optimizer_config_{}_test')
 class TitleOptimizerColorTest(parameterized.TestCase):
 

@@ -24,7 +24,7 @@ from shoptimizer_api.util import size_miner
 
 
 @mock.patch(
-    'util.size_miner._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
+    'shoptimizer_api.util.size_miner._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
     'gpc_string_to_id_mapping_{}_test')
 class SizeMinerTest(parameterized.TestCase):
 

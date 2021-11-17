@@ -38,7 +38,7 @@ def _build_dummy_product(title: str = '') -> Dict[str, Any]:
   }
 
 
-@mock.patch('util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',
+@mock.patch('shoptimizer_api.util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',
             'promo_text_removal_optimizer_config_{}_test')
 class PromoTextRemoverTest(parameterized.TestCase):
 

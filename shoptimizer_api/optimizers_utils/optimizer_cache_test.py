@@ -56,7 +56,7 @@ class OptimizerCacheTest(parameterized.TestCase):
     builtin_optimizers_package_name = '../optimizers_builtin'
 
     with mock.patch(
-        'optimizers_utils.optimizer_cache.OptimizerCache._get_optimizer_classes_in_package'
+        'shoptimizer_api.optimizers_utils.optimizer_cache.OptimizerCache._get_optimizer_classes_in_package'
     ) as mock_get_optimizer_classes_in_package:
       cache = optimizer_cache.OptimizerCache(builtin_optimizers_package_name)
       # Calls the optimizer_classes property several times to make sure loading

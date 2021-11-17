@@ -24,7 +24,7 @@ from shoptimizer_api.util import app_util
 
 
 @mock.patch(
-    'optimizers_builtin.adult_optimizer._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
+    'shoptimizer_api.optimizers_builtin.adult_optimizer._GPC_STRING_TO_ID_MAPPING_CONFIG_FILE_NAME',
     'gpc_string_to_id_mapping_{}_test')
 class AdultOptimizerTest(parameterized.TestCase):
 

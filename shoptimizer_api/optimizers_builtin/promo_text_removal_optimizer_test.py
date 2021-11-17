@@ -25,7 +25,7 @@ from shoptimizer_api.test_data import requests_bodies
 from shoptimizer_api.util import app_util
 
 
-@mock.patch('util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',
+@mock.patch('shoptimizer_api.util.promo_text_remover._PROMO_TEXT_REMOVAL_CONFIG_FILE_NAME',
             'promo_text_removal_optimizer_config_{}_test')
 class PromoTextRemovalOptimizerTest(parameterized.TestCase):
 
